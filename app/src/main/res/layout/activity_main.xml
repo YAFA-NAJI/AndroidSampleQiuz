@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="18dp"
+    tools:context=".MainActivity">
+
+    <!-- ImageView to set the image as the background -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/channels4_profile"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Simple Quiz Game"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/scoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTextView"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Score: 0"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/timeLeftTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTextView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="10"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20sp" />
+
+    <!-- TextView to display the current question -->
+    <TextView
+        android:id="@+id/questionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timeLeftTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Question 1: How many colors are there in the rainbow ?"
+        android:textColor="#050404"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Buttons for the choices -->
+    <Button
+        android:id="@+id/choice1Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/questionTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@color/red"
+        android:text="Choice 1"
+        android:textColorHighlight="#8BC34A"
+        android:textColorLink="#8BC34A"
+        android:textSize="14sp" />
+
+
+    <Button
+        android:id="@+id/choice2Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/choice1Button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@color/red"
+        android:text="Choice 2"
+        android:textColorHighlight="#8BC34A"
+        android:textColorLink="#8BC34A"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/choice3Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/choice2Button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@color/red"
+        android:text="Choice 3"
+        android:textColorHighlight="#8BC34A"
+        android:textColorLink="#8BC34A"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/choice4Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/choice3Button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@color/red"
+        android:text="Choice 4"
+        android:textColorHighlight="#8BC34A"
+        android:textColorLink="#8BC34A"
+        android:textSize="14sp" />
+
+    <!-- TextView for author information -->
+    <TextView
+        android:id="@+id/authorInfoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/choice4Button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Yafa_1200708"
+        android:textColor="#040303"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
